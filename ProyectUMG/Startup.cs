@@ -62,6 +62,7 @@ namespace ProyectUMG
             {
                 config.AddPolicy(Policies.Admin, Policies.AdminPolicy());
                 config.AddPolicy(Policies.User, Policies.UserPolicy());
+                config.AddPolicy(Policies.Client, Policies.ClientPolicy());
             });
 
         }

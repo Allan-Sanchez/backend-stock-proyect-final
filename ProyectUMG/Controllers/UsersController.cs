@@ -42,7 +42,7 @@ namespace ProyectUMG.Controllers
 
         // GET: api/Users/5
         [HttpGet("{id}")]
-        [Authorize(Policy = Policies.Admin)]
+        ///[Authorize(Policy = Policies.Admin)]
         public async Task<ActionResult<User>> GetUser(int id)
         {
             var user = await _context.User.FindAsync(id);
@@ -59,7 +59,7 @@ namespace ProyectUMG.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPut("{id}")]
-        [Authorize(Policy = Policies.Admin)]
+        //[Authorize(Policy = Policies.Admin)]
         public async Task<IActionResult> PutUser(int id, User user)
         {
             
